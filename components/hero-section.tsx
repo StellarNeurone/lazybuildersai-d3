@@ -5,8 +5,25 @@ import { ArrowRight, Smartphone } from "lucide-react"
 
 export function HeroSection() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center gradient-spotlight-hero">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <div className="absolute inset-0 w-full h-full flex items-center justify-start pl-2">
+        <iframe
+          src="https://my.spline.design/retrofuturisticcircuitloop-d9QYLHC2hzYJVvA3Q8JndtE4/"
+          frameBorder="0"
+          width="80%"
+          height="80%"
+          className="object-cover"
+          style={{
+            filter: "none",
+            pointerEvents: "none",
+          }}
+        />
+        <div className="absolute bottom-0 right-0 w-32 h-16 bg-background/80 z-20"></div>
+      </div>
+
+      <div className="absolute inset-0 bg-background/20"></div>
+
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Hero Content */}
           <div className="text-center lg:text-left animate-fade-in-up">

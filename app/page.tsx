@@ -1,6 +1,7 @@
 import { Navigation } from "@/components/navigation"
 import { HeroSection } from "@/components/hero-section"
 import { ProblemSection } from "@/components/problem-section"
+import { WhoItsForSection } from "@/components/who-its-for-section"
 import { SolutionSection } from "@/components/solution-section"
 import { HowItWorks } from "@/components/how-it-works"
 import { PricingSection } from "@/components/pricing-section"
@@ -15,6 +16,7 @@ export default function HomePage() {
     <main className="min-h-screen">
       <Navigation />
       <HeroSection />
+      <WhoItsForSection />
       <ProblemSection />
       <SolutionSection />
       <HowItWorks />
